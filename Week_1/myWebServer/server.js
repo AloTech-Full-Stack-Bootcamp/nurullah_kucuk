@@ -1,5 +1,5 @@
 const http = require('http');
-var log = require('./log.js')
+const log = require('./log.js')
 
 http.createServer(function (request, response) {
     console.log(request.url)

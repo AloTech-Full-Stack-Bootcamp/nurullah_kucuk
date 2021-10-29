@@ -1,4 +1,4 @@
-var log = {
+const log = {
     information: function (info) {
         console.log("Information: " + info)
     },
