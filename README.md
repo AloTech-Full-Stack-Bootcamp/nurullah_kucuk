@@ -1,2 +1,2 @@
 # nurullah_kucuk
-Nurullah_Kucuk_Repo
+Alotech Full Stack Bootcamp Nurullah_Kucuk_Repo
