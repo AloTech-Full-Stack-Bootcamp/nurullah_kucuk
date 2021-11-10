@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0"
+  },
+  "name": "cleanblog",
+  "description": "CleanBlog Project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AloTech-Full-Stack-Bootcamp/nurullah_kucuk.git"
+  },
+  "author": "Nurullah Kucuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AloTech-Full-Stack-Bootcamp/nurullah_kucuk.git/issues"
+  },
+  "homepage": "https://github.com/AloTech-Full-Stack-Bootcamp/nurullah_kucuk/blob/main/README.md"
+}
