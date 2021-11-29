@@ -4,24 +4,24 @@ import "./App.css";
 const INITIAL_STATE = [];
 
 export default function App() {
-  const [liste, setListe] = useState(INITIAL_STATE);
+  const [list, setList] = useState(INITIAL_STATE);
   const [newHeader, setNewHeader] = useState();
   const addNew = (title) => {
-    setListe([...liste, { id: Date.now(), baslik: title, tamamlandi: false }]);
+    setList([...list, { id: Date.now(), header: title, complete: false }]);
     setNewHeader("");
   };
   const markCompleted = (id) => {
-    setListe(liste.map((el) => (el.id === id ? { ...el, tamamlandi: !el.tamamlandi } : el)));
+    setList(list.map((el) => (el.id === id ? { ...el, complete: !el.complete } : el)));
   };
   const clearCompleted = () => {
-    setListe(liste.filter((item) => !item.tamamlandi));
+    setList(list.filter((item) => !item.complete));
   };
 
   return (
     <>
       <div className="app">
         <h1 className="main-title" >NOT SEPETİM</h1>
-        <div className="form-ekle">
+        <div className="add-form">
           <input
             placeholder="Unutma.."
             value={newHeader}
@@ -29,17 +29,17 @@ export default function App() {
           />
           <button onClick={() => addNew(newHeader)}> Ekle </button>
         </div>
-        <div className="liste">
-          {liste.map((item, index) => (
+        <div className="list">
+          {list.map((item, index) => (
             <div
               key={index}
               onClick={() => markCompleted(item.id)}
-              className={item.tamamlandi ? "tamamlandi" : ""}h>
-              {item.baslik}
+              className={item.complete ? "completed" : ""}h>
+              {item.header}
             </div>
           ))}
         </div>
-        <button onClick={() => clearCompleted()} className="temizle">
+        <button onClick={() => clearCompleted()} className="clear">
           Tamamlananları Temizle
         </button>
       </div>
