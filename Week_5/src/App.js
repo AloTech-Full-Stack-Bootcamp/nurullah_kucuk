@@ -4,16 +4,20 @@ import "./App.css";
 const INITIAL_STATE = [];
 
 export default function App() {
-  const [list, setList] = useState(INITIAL_STATE);
-  const [newHeader, setNewHeader] = useState();
+  // Başlangıç değerimiz boş bir dizi.
+  const [list, setList] = useState(INITIAL_STATE); 
+  const [newHeader, setNewHeader] = useState();  
   const addNew = (title) => {
-    setList([...list, { id: Date.now(), header: title, complete: false }]);
+    // Her yeni eklemede diziye atılacak obje ve key-value değerleri.
+    setList([...list, { id: Date.now(), header: title, complete: false }]); 
     setNewHeader("");
   };
-  const markCompleted = (id) => {
+  const markCompleted = (id) => { 
+    // Tamamlandığında üzerine çizgi çekiyoruz.
     setList(list.map((el) => (el.id === id ? { ...el, complete: !el.complete } : el)));
   };
-  const clearCompleted = () => {
+  const clearCompleted = () => { 
+    // tamamlanan görevleri silmek için.
     setList(list.filter((item) => !item.complete));
   };
 
