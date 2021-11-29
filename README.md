@@ -9,7 +9,7 @@
 
 - [Hafta 7-9] - Django Eğitimi
 
-| Plugin | README |
+
 | ------ | ------ |
 | Odev-1   | [https://github.com/AloTech-Full-Stack-Bootcamp/nurullah_kucuk/tree/main/Week_1 |
 | Odev-2   | https://github.com/AloTech-Full-Stack-Bootcamp/nurullah_kucuk/tree/main/Week_2 |
