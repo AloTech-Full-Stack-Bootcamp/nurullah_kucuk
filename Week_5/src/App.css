@@ -3,10 +3,6 @@
   --main-color-light: rgba(41,128,185,0.5);
   --accent-color: rgb(18, 243, 119,1);
   --accent-color-light: rgba(18, 243, 119,0.5);
-  --third-color: rgb(143, 226, 10,1);
-  --third-color-light: rgb(143, 226, 10,.5);
-  --flash-color: rgb(170, 10, 50,1);
-  --flash-color-light: rgb(170, 10, 50,.5);
 
 }
 *{
